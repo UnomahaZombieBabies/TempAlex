@@ -27,6 +27,7 @@ module.exports.models = {
   * See http://sailsjs.org/#!/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-  // migrate: 'alter'
+  // This apparently adjusts models on the fly if left as 'alter'
+  migrate: 'alter'
 
 };
