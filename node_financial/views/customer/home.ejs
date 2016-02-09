@@ -1,0 +1,9 @@
+<h1>Customer Administration</h1>
+<div>Use this page to manage your customers.</div>
+<ul>
+	<% for(var i=0; i<customers.length; i++) { %>
+		<li><a href="/customer/show/<%= customers[i].id %>">
+		<%= customers[i].name %>
+		</a></li>
+	<% } %>
+</ul>
