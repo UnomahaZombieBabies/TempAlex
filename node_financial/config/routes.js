@@ -39,7 +39,7 @@ module.exports.routes = {
     view: 'ogHomepage'
   },
   '/marchMadness': {
-    view: 'marchMadness/home'
+    view: 'marchMadness'
   }
 
   /***************************************************************************
