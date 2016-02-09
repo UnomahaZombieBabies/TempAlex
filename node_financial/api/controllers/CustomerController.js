@@ -1,7 +1,7 @@
 /**
- * CusomterController
+ * CustomerController
  *
- * @description :: Server-side logic for managing cusomters
+ * @description :: Server-side logic for managing customers
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
