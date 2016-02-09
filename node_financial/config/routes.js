@@ -34,6 +34,12 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+  '/ogHomepage': {
+    view: 'ogHomepage'
+  },
+  '/marchMadness': {
+    view: 'marchMadness/home'
   }
 
   /***************************************************************************

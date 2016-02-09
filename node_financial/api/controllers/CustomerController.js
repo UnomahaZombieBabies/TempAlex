@@ -21,7 +21,7 @@ module.exports = {
         });
     },
     
-    show: function (req,res,next) {
+    show: function (req, res, next) {
         Customer.findOne(req.param('id'), function foundCustomer(err, customer) { 
             if (err) return next(err);
             if (!customer) return next();
@@ -30,9 +30,18 @@ module.exports = {
               customer: customer
               });
           });
+     },
+     home: function (req, res, next) {
+        //find with no params should return all, correct? :)
+        //limit to 30 - just as a safety measure for now.  Unhandled. 
+        Customer.find().limit(30).exec(
+          function(err,customers){
+            if (err) return next(err);
+            sails.log('inside: customers in function: ' + customers);
+            res.view({
+              customers: customers
+            });
+          });
+        
      }
-
-
-            
 };
-
